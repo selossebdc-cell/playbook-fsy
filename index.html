@@ -2130,9 +2130,9 @@ steps: [
     function showApp(session) {
       document.getElementById('login-container').classList.remove('active');
       document.getElementById('app-container').classList.add('active');
-      if (session && session.user) {
-        document.getElementById('header-user').textContent = session.user.email || '';
-      }
+      document.getElementById('header-user').textContent = '';
+      var logoutBtn = document.getElementById('btn-logout');
+      if (logoutBtn) logoutBtn.style.display = 'none';
     }
 
     // --- Process List ---
@@ -3059,30 +3059,16 @@ steps: [
         });
       });
 
-      // --- Init Auth & Data (apres que tous les listeners sont attaches) ---
+      // --- Init Direct (pas d'auth, protection via portail chiffre) ---
       try {
-        var session = await db.auth.getSession();
-        if (session) {
-          showApp(session);
-          await loadAllData();
-          renderAll();
-        } else {
-          showLogin();
-        }
+        showApp(null);
+        await loadAllData();
+        renderAll();
       } catch (e) {
         console.error('Erreur init:', e);
-        showLogin();
+        showApp(null);
+        renderAll();
       }
-
-      db.auth.onAuthStateChange(async function(event, session) {
-        if (event === 'SIGNED_IN' && session) {
-          showApp(session);
-          await loadAllData();
-          renderAll();
-        } else if (event === 'SIGNED_OUT') {
-          showLogin();
-        }
-      });
 
     })();
   </script>
