@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "evolutionVersion": 1,
+  "evolutionMode": "greenfield",
+  "counters": {
+    "epic": 0,
+    "us": 0,
+    "task": 0,
+    "adr": 0
+  },
+  "pipeline": {
+    "status": "running",
+    "startedAt": "2026-03-17T21:14:00Z",
+    "completedAt": null,
+    "currentPhase": "break"
+  },
+  "phases": {
+    "break": {
+      "status": "running",
+      "gate": null,
+      "startedAt": "2026-03-17T21:17:32.622Z",
+      "completedAt": null
+    },
+    "model": {
+      "status": "pending",
+      "gate": null,
+      "startedAt": null,
+      "completedAt": null
+    },
+    "plan": {
+      "status": "pending",
+      "gate": null,
+      "startedAt": null,
+      "completedAt": null
+    },
+    "build": {
+      "status": "pending",
+      "gate": null,
+      "startedAt": null,
+      "completedAt": null
+    },
+    "debrief": {
+      "status": "pending",
+      "gate": null,
+      "startedAt": null,
+      "completedAt": null
+    }
+  },
+  "gates": {
+    "0": {
+      "status": "pending",
+      "checkedAt": null,
+      "errors": []
+    },
+    "1": {
+      "status": "pending",
+      "checkedAt": null,
+      "errors": []
+    },
+    "2": {
+      "status": "pending",
+      "checkedAt": null,
+      "errors": []
+    },
+    "3": {
+      "status": "pending",
+      "checkedAt": null,
+      "errors": []
+    },
+    "4": {
+      "status": "pending",
+      "checkedAt": null,
+      "errors": []
+    },
+    "5": {
+      "status": "pending",
+      "checkedAt": null,
+      "errors": []
+    }
+  },
+  "tasks": {
+    "total": 0,
+    "completed": 0,
+    "current": null,
+    "items": {}
+  },
+  "lastUpdated": "2026-03-17T21:17:32.623Z",
+  "requirementsFile": "input/requirements.md"
+}

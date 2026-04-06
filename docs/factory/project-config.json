@@ -1,0 +1,56 @@
+{
+  "$schema": "./project-config.schema.json",
+  "_comment": "Configuration projet generee par l'agent Architect pendant la phase MODEL",
+
+  "projectName": "playbook-fsy",
+
+  "project": {
+    "name": "playbook-fsy",
+    "version": "1.0.0",
+    "type": "web-spa"
+  },
+
+  "architecture": {
+    "style": "layered",
+    "layers": {
+      "domain": "inline (section JS 'Domain')",
+      "application": "inline (section JS 'Application')",
+      "infrastructure": "inline (section JS 'Infrastructure')",
+      "ui": "inline (section HTML/CSS/JS 'UI')"
+    },
+    "_note": "Fichier HTML unique — les layers sont des sections commentees, pas des dossiers"
+  },
+
+  "paths": {
+    "app": "index.html",
+    "components": "inline",
+    "hooks": "inline",
+    "constants": "inline (debut du script principal)",
+    "tests": "tests manuels uniquement (voir docs/acceptance.md)"
+  },
+
+  "validation": {
+    "appAssembly": {
+      "enabled": false,
+      "_note": "Fichier unique — pas d'assemblage de composants separes"
+    },
+    "boundaries": {
+      "enabled": true,
+      "rules": {
+        "domain": ["!infrastructure", "!ui"],
+        "application": ["domain", "!infrastructure", "!ui"],
+        "infrastructure": ["domain", "application"],
+        "ui": ["domain", "application"]
+      },
+      "_note": "Verifie manuellement via review — sections commentees dans le fichier"
+    },
+    "codeQuality": {
+      "testCoverage": 0,
+      "branchCoverage": 0,
+      "functionCoverage": 0,
+      "typescriptStrict": false,
+      "noMagicNumbers": true,
+      "_note": "Pas de tests automatises, pas de TypeScript. Code JS lisible avec fonctions nommees."
+    }
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "version": "1.0.0",
+  "startedAt": "2026-03-17T21:21:25.654Z",
+  "events": [
+    {
+      "id": 1,
+      "timestamp": "2026-03-17T21:21:25.655Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 0,
+        "status": "FAIL",
+        "errors": [
+          "Requirements validation: Sections manquantes ou vides dans input/requirements.md"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-03-17T21:25:52.103Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 0,
+        "status": "FAIL",
+        "errors": [
+          "Requirements validation: Sections manquantes ou vides dans input/requirements.md"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-03-17T21:26:16.827Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 0,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-03-17T21:26:23.443Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "analyst",
+        "source": "factory-intake"
+      }
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-03-18T11:35:48.794Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 0,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 6,
+      "timestamp": "2026-03-18T11:35:59.573Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "analyst",
+        "source": "factory-intake"
+      }
+    },
+    {
+      "id": 7,
+      "timestamp": "2026-03-18T11:36:10.639Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 1,
+        "status": "FAIL",
+        "errors": [
+          "Fichier manquant: docs/brief.md",
+          "Fichier manquant: docs/scope.md",
+          "Fichier manquant: docs/acceptance.md",
+          "Section manquante dans docs/brief.md: ## Résumé exécutif (ref: templates/break/brief-template.md)",
+          "Section manquante dans docs/brief.md: ## Hypothèses explicites (ref: templates/break/brief-template.md)",
+          "Section manquante dans docs/scope.md: ## IN (ref: templates/break/scope-template.md)",
+          "Section manquante dans docs/scope.md: ## OUT (ref: templates/break/scope-template.md)",
+          "Section manquante dans docs/acceptance.md: ## Critères globaux (ref: templates/break/acceptance-template.md)",
+          "Structure validation: Structure validation failed"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "timestamp": "2026-03-18T11:40:23.532Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 1,
+        "status": "FAIL",
+        "errors": [
+          "Structure validation: Structure validation failed"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "timestamp": "2026-03-18T11:41:02.263Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 1,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 10,
+      "timestamp": "2026-03-18T11:41:12.540Z",
+      "type": "phase_completed",
+      "data": {
+        "phase": "BREAK",
+        "status": "PASS",
+        "message": ""
+      }
+    },
+    {
+      "id": 11,
+      "timestamp": "2026-03-18T11:41:38.432Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 1,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 12,
+      "timestamp": "2026-03-18T11:42:23.795Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "pm",
+        "source": "factory-spec"
+      }
+    },
+    {
+      "id": 13,
+      "timestamp": "2026-03-18T11:45:50.352Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "architect",
+        "source": "factory-spec"
+      }
+    },
+    {
+      "id": 14,
+      "timestamp": "2026-03-18T11:47:45.920Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "rules-memory",
+        "source": "factory-spec"
+      }
+    },
+    {
+      "id": 15,
+      "timestamp": "2026-03-18T11:48:55.028Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 2,
+        "status": "FAIL",
+        "errors": [
+          "Section manquante dans docs/specs/api.md: ## Endpoints (ref: templates/specs/api.md)"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "timestamp": "2026-03-18T11:49:04.776Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 2,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 17,
+      "timestamp": "2026-03-18T11:49:12.864Z",
+      "type": "phase_completed",
+      "data": {
+        "phase": "MODEL",
+        "status": "PASS",
+        "message": ""
+      }
+    },
+    {
+      "id": 18,
+      "timestamp": "2026-03-18T12:31:32.876Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 2,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 19,
+      "timestamp": "2026-03-18T12:31:39.736Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "scrum-master",
+        "source": "factory-plan"
+      }
+    },
+    {
+      "id": 20,
+      "timestamp": "2026-03-18T12:41:03.562Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 3,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 21,
+      "timestamp": "2026-03-18T12:41:09.234Z",
+      "type": "phase_completed",
+      "data": {
+        "phase": "ACT_PLAN",
+        "status": "PASS",
+        "message": ""
+      }
+    },
+    {
+      "id": 22,
+      "timestamp": "2026-03-18T13:16:46.757Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 3,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 23,
+      "timestamp": "2026-03-18T13:17:19.337Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "developer",
+        "source": "factory-build"
+      }
+    },
+    {
+      "id": 24,
+      "timestamp": "2026-03-18T13:25:54.178Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "developer",
+        "source": "factory-build"
+      }
+    },
+    {
+      "id": 25,
+      "timestamp": "2026-03-18T13:25:55.069Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "developer",
+        "source": "factory-build"
+      }
+    },
+    {
+      "id": 26,
+      "timestamp": "2026-03-18T13:25:55.971Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "developer",
+        "source": "factory-build"
+      }
+    },
+    {
+      "id": 27,
+      "timestamp": "2026-03-18T13:25:57.314Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "developer",
+        "source": "factory-build"
+      }
+    },
+    {
+      "id": 28,
+      "timestamp": "2026-03-18T13:25:58.708Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "developer",
+        "source": "factory-build"
+      }
+    },
+    {
+      "id": 29,
+      "timestamp": "2026-03-18T13:25:59.430Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "developer",
+        "source": "factory-build"
+      }
+    },
+    {
+      "id": 30,
+      "timestamp": "2026-03-18T13:26:15.170Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 4,
+        "status": "FAIL",
+        "errors": [
+          "Pattern {tests,src}/**/*.test.*: 0 fichier(s), minimum 1 requis",
+          "Project health: package.json has no dependencies nor devDependencies",
+          "Tests échoués: Tests failed after 3 attempts: Command failed: npm test\nbash: tests/run-all.sh: No such file or directory\n",
+          "Testing plan content: docs/testing/plan.md non trouvé"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "timestamp": "2026-03-18T13:31:02.059Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 4,
+        "status": "FAIL",
+        "errors": [
+          "Project health: package.json has no dependencies nor devDependencies"
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "timestamp": "2026-03-18T13:31:16.390Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 4,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 33,
+      "timestamp": "2026-03-18T13:31:21.332Z",
+      "type": "phase_completed",
+      "data": {
+        "phase": "ACT_BUILD",
+        "status": "PASS",
+        "message": ""
+      }
+    },
+    {
+      "id": 34,
+      "timestamp": "2026-04-06T11:10:46.927Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 0,
+        "status": "FAIL",
+        "errors": [
+          "Requirements validation: Sections manquantes ou vides dans input/requirements-2.md"
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "timestamp": "2026-04-06T11:12:51.187Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 0,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 36,
+      "timestamp": "2026-04-06T11:12:58.818Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "analyst",
+        "source": "factory-intake"
+      }
+    },
+    {
+      "id": 37,
+      "timestamp": "2026-04-06T11:33:28.447Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "analyst",
+        "source": "factory-intake"
+      }
+    },
+    {
+      "id": 38,
+      "timestamp": "2026-04-06T11:40:24.993Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 1,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 39,
+      "timestamp": "2026-04-06T11:40:31.070Z",
+      "type": "phase_completed",
+      "data": {
+        "phase": "BREAK",
+        "status": "PASS",
+        "message": ""
+      }
+    },
+    {
+      "id": 40,
+      "timestamp": "2026-04-06T11:42:39.390Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 1,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 41,
+      "timestamp": "2026-04-06T11:43:20.079Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "pm",
+        "source": "factory-spec"
+      }
+    },
+    {
+      "id": 42,
+      "timestamp": "2026-04-06T11:47:10.096Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "architect",
+        "source": "factory-spec"
+      }
+    },
+    {
+      "id": 43,
+      "timestamp": "2026-04-06T11:47:58.616Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "rules-memory",
+        "source": "factory-spec"
+      }
+    },
+    {
+      "id": 44,
+      "timestamp": "2026-04-06T11:49:06.715Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 2,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 45,
+      "timestamp": "2026-04-06T11:49:12.093Z",
+      "type": "phase_completed",
+      "data": {
+        "phase": "MODEL",
+        "status": "PASS",
+        "message": ""
+      }
+    },
+    {
+      "id": 46,
+      "timestamp": "2026-04-06T11:49:39.184Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 2,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 47,
+      "timestamp": "2026-04-06T11:49:47.648Z",
+      "type": "agent_delegated",
+      "data": {
+        "agent": "scrum-master",
+        "source": "factory-plan"
+      }
+    },
+    {
+      "id": 48,
+      "timestamp": "2026-04-06T11:51:39.943Z",
+      "type": "gate_checked",
+      "data": {
+        "gate": 3,
+        "status": "PASS",
+        "errors": []
+      }
+    },
+    {
+      "id": 49,
+      "timestamp": "2026-04-06T11:51:44.626Z",
+      "type": "phase_completed",
+      "data": {
+        "phase": "ACT_PLAN",
+        "status": "PASS",
+        "message": ""
+      }
+    }
+  ]
+}
