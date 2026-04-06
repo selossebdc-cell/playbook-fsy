@@ -1,0 +1,80 @@
+{
+  "$schema": "./project-config.schema.json",
+  "_comment": "Configuration projet generee par l'agent Architect pendant la phase MODEL",
+
+  "projectName": "playbook-fsy",
+
+  "project": {
+    "name": "playbook-fsy",
+    "version": "2.0.0",
+    "type": "web-spa"
+  },
+
+  "architecture": {
+    "style": "layered",
+    "layers": {
+      "domain": "inline:domain",
+      "application": "inline:application",
+      "infrastructure": "inline:infrastructure",
+      "ui": "inline:ui"
+    },
+    "_note": "Fichier HTML unique — les layers sont des sections commentees inline, pas des dossiers"
+  },
+
+  "paths": {
+    "app": "index.html",
+    "appV2": "app.html",
+    "components": "inline",
+    "hooks": "inline",
+    "constants": "inline",
+    "tests": "manual"
+  },
+
+  "validation": {
+    "appAssembly": {
+      "enabled": false,
+      "_note": "Fichier HTML unique — pas d'assemblage de composants"
+    },
+    "boundaries": {
+      "enabled": true,
+      "rules": {
+        "domain": ["!application", "!infrastructure", "!ui"],
+        "application": ["domain", "!infrastructure", "!ui"],
+        "infrastructure": ["domain", "application"],
+        "ui": ["domain", "application"]
+      },
+      "_note": "Verifie manuellement via sections commentees dans le fichier HTML"
+    },
+    "codeQuality": {
+      "testCoverage": 0,
+      "branchCoverage": 0,
+      "functionCoverage": 0,
+      "typescriptStrict": false,
+      "noMagicNumbers": false,
+      "_note": "Tests manuels uniquement, JS vanilla sans TypeScript"
+    }
+  },
+
+  "supabase": {
+    "instance": "dcynlifggjiqqihincbp",
+    "region": "eu-north-1",
+    "tablesV1": ["playbook_processes", "playbook_steps", "playbook_owners"],
+    "tablesV2": [
+      "parcours_templates", "parcours_clients", "parcours_phases",
+      "parcours_emails", "parcours_outils",
+      "client_kpis", "client_kpi_alerts",
+      "chatbot_configs", "chatbot_faq", "chatbot_stats"
+    ],
+    "auth": "signInWithPassword",
+    "roles": ["admin", "client", "assistant"]
+  },
+
+  "deployment": {
+    "hosting": "github-pages",
+    "domain": "espace.csbusiness.fr",
+    "files": {
+      "playbookV1": "index.html",
+      "portailV2": "app.html"
+    }
+  }
+}
